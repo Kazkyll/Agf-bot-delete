@@ -2,11 +2,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefixA = "*";
-const prefixJ = "/";
-
-
-//if (process._maxListeners)
-  //  process.setMaxListeners(process._maxListeners + 1);
+const prefixJ = "$";
 
 
 bot.on('ready', () => {
@@ -23,7 +19,7 @@ bot.on('message', msg => {
 //  parametre des version validé des OS du jeu
 
 bot.on('message', function (message) {
-  if (message.content === prefixA + 'Android') {
+  if (message.content === prefixJ + 'android') {
     message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.15')
   }
 });
