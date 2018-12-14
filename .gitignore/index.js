@@ -97,7 +97,7 @@ bot.on("message", msg => {
 });
 
 bot.on('message', function (message) {
-  if (message.content === prefix + 'AdmissionNew') {
+  if (message.content === prefixA + 'AdmissionNew') {
     message.channel.send('**')
     message.channel.send('**')
     message.channel.send('**')
