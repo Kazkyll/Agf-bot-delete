@@ -15,9 +15,8 @@ bot.on('message', function (message) {
   if (message.content === (prefixA + 'help') ) {
     message.channel.send('La commande *help vous sert à connaitre les actions que Conchita peut faire. ')
     message.channel.send('La commande *ping vous sert à tester si Conchita fonctionne. ')
-    message.channel.send('La commande *ios vous informe que la dernière version validé de Assassin Sniper 3D pour IOS. ')
+    message.channel.send('La commande *ios vous informe que la dernière version validé de Assassin Sniper 3D pour IOS. \n  et voila ')
     message.channel.send('La commande *android vous informe que la dernière version validé de Assassin Sniper 3D pour Android. ')
-    message.channel.send('La commande *supchat vous sert à effacer completement un salon (100 message à la fois seulemnt). **ATTENTION** ')
     message.channel.send('La commande *AdmissionNew permet de remettre le texte du salon Admission après un nettoyage à n’utiliser **que dans le salon admission svp !!!**.  ')
 
 
