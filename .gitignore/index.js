@@ -2,7 +2,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefixA = "*";
-const prefixJ = "?";
+//const prefixJ = "?";
 
 
 bot.on('ready', () => {
@@ -26,15 +26,15 @@ bot.on('message', function (message) {
 
 // parametrage de la commande help pour joueur
 
-bot.on('message', function (message) {
-  if (message.content === (prefixJ + 'help') ) {
-    message.channel.send('La commande ?help vous sert à connaitre les actions que Conchita peut faire. ')
-    message.channel.send('La commande ?ping vous sert à tester si Conchita fonctionne. ')
-    message.channel.send('La commande ?ios vous informe que la dernière version validé de Assassin Sniper 3D pour IOS. ')
-    message.channel.send('La commande ?android vous informe que la dernière version validé de Assassin Sniper 3D pour Android. ')
+//bot.on('message', function (message) {
+  //if (message.content === (prefixJ + 'help') ) {
+    //message.channel.send('La commande ?help vous sert à connaitre les actions que Conchita peut faire. ')
+    //message.channel.send('La commande ?ping vous sert à tester si Conchita fonctionne. ')
+    //message.channel.send('La commande ?ios vous informe que la dernière version validé de Assassin Sniper 3D pour IOS. ')
+    //message.channel.send('La commande ?android vous informe que la dernière version validé de Assassin Sniper 3D pour Android. ')
 
-  }
-});
+  //}
+//});
 
 
 
@@ -47,11 +47,11 @@ bot.on('message', msg => {
   }
 });
 
-bot.on('message', msg => {
-  if (msg.content === prefixJ + 'ping') {
-    msg.reply('pong');
-  }
-});
+//bot.on('message', msg => {
+  //if (msg.content === prefixJ + 'ping') {
+   // msg.reply('pong');
+ // }
+//});
 
 
 
@@ -63,11 +63,11 @@ bot.on('message', function (message) {
   }
 });
 
-bot.on('message', function (message) {
-  if (message.content === prefixJ + 'android') {
-    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.15')
-  }
-});
+//bot.on('message', function (message) {
+  //if (message.content === prefixJ + 'android') {
+    //message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.15')
+ // }
+//});
 
 
 bot.on('message', function (message) {
@@ -76,11 +76,11 @@ bot.on('message', function (message) {
   }
 });
 
-bot.on('message', function (message) {
-  if (message.content === prefixJ + 'ios') {
-    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour IOS est la 2.22.3')
-  }
-});
+//bot.on('message', function (message) {
+ // if (message.content === prefixJ + 'ios') {
+    //message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour IOS est la 2.22.3')
+ // }
+//});
 
 //Script de suppression des messages
 
