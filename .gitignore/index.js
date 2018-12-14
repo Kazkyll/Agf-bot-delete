@@ -270,4 +270,4 @@ bot.on('message', function (message) {
 
 
 
-bot.login('NTEzODMzNjYyNzE0NzQwNzQ0.DtSI_A.1KgXXq1czLo6mtGpfbKI9LXTPsk');
+bot.login(process.env.TOKEN);
