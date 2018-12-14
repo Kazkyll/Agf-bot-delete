@@ -19,27 +19,27 @@ bot.on('message', msg => {
 //  parametre des version validé des OS du jeu
 
 bot.on('message', function (message) {
-  if (message.content === prefixA + 'Android') {
-    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.10')
-  }
-});
-
-bot.on('message', function (message) {
   if (message.content === prefixA + 'android') {
-    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.10')
+    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.15')
   }
 });
-
 
 bot.on('message', function (message) {
-  if (message.content === prefixA + 'IOS') {
-    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour IOS est la 2.20.1')
+  if (message.content === prefixJ + 'android') {
+    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.15')
   }
 });
+
 
 bot.on('message', function (message) {
   if (message.content === prefixA + 'ios') {
-    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour IOS est la 2.20.1')
+    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour IOS est la 2.21.3')
+  }
+});
+
+bot.on('message', function (message) {
+  if (message.content === prefixJ + 'ios') {
+    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour IOS est la 2.22.3')
   }
 });
 
@@ -60,11 +60,11 @@ bot.on("message", msg => {
 // parametrage de la commande hel ou HELP
 
 bot.on('message', function (message) {
-  if (message.content === (prefixA + 'HELP') ) {
-    message.channel.send('La commande *help ou  *HELP vous sert à connaitre les actions que Conchita peut faire. ')
-    message.channel.send('La commande *IOS ou *ios vous informe que la dernière version validé de Assassin Sniper 3D pour IOS. ')
-    message.channel.send('La commande *Android ou *android vous informe que la dernière version validé de Assassin Sniper 3D pour Android. ')
-    message.channel.send('*AdmissionNew permet de remettre le texte du salon Admission après un nettoyage a n utiliser que dans le salon admission svp !!!.  ')
+  if (message.content === (prefixJ + 'help') ) {
+    message.channel.send('La commande $help ou  *HELP vous sert à connaitre les actions que Conchita peut faire. ')
+    message.channel.send('La commande $IOS ou *ios vous informe que la dernière version validé de Assassin Sniper 3D pour IOS. ')
+    message.channel.send('La commande $Android ou *android vous informe que la dernière version validé de Assassin Sniper 3D pour Android. ')
+    message.channel.send('$AdmissionNew permet de remettre le texte du salon Admission après un nettoyage a n utiliser que dans le salon admission svp !!!.  ')
   }
 });
 
