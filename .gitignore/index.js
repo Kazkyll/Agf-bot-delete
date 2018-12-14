@@ -1,29 +1,9 @@
-// pm2 start app.js
-
-// pm2 start index.js -i max # Enable load-balancer and cluster features
-
-// pm2 reload all           # Reload all apps in 0s manner
-
-// pm2 flush          # Clear all the logs
-
-// pm2 monit
-
-// pm2 describe 0 # To have more details on a specific process
-
-// pm2 stop <app_name|id|all>
-// pm2 restart  <app_name|id|all>
-// pm2 delete   <app_name|id|all>
-
-//pm2 list Listing all running processes
-
-// pm2 save       To save a process list just do
-
-
-process.setMaxListeners(0);
 
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const prefix = "*";
+const prefixA = "*";
+const prefixJ = "/";
+
 
 //if (process._maxListeners)
   //  process.setMaxListeners(process._maxListeners + 1);
@@ -34,7 +14,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message', msg => {
-  if (msg.content === prefix + 'ping') {
+  if (msg.content === prefixA + 'ping') {
     msg.reply('pong');
   }
 });
@@ -43,26 +23,26 @@ bot.on('message', msg => {
 //  parametre des version validé des OS du jeu
 
 bot.on('message', function (message) {
-  if (message.content === prefix + 'Android') {
+  if (message.content === prefixA + 'Android') {
     message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.15')
   }
 });
 
 bot.on('message', function (message) {
-  if (message.content === prefix + 'android') {
+  if (message.content === prefixA + 'android') {
     message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.15')
   }
 });
 
 
 bot.on('message', function (message) {
-  if (message.content === prefix + 'IOS') {
+  if (message.content === prefixA + 'IOS') {
     message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour IOS est la 2.20.1')
   }
 });
 
 bot.on('message', function (message) {
-  if (message.content === prefix + 'ios') {
+  if (message.content === prefixA + 'ios') {
     message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour IOS est la 2.20.1')
   }
 });
@@ -71,7 +51,7 @@ bot.on('message', function (message) {
 
 
 bot.on("message", msg => {
-    if (msg.content.toLowerCase().startsWith(prefix + "supchat")) {
+    if (msg.content.toLowerCase().startsWith(prefixA + "supchat")) {
         async function clear() {
             msg.delete();
             const fetched = await msg.channel.fetchMessages({limit: 99});
@@ -84,7 +64,7 @@ bot.on("message", msg => {
 // parametrage de la commande hel ou HELP
 
 bot.on('message', function (message) {
-  if (message.content === (prefix + 'HELP') ) {
+  if (message.content === (prefixA + 'HELP') ) {
     message.channel.send('La commande *help ou  *HELP vous sert à connaitre les actions que Conchita peut faire. ')
     message.channel.send('La commande *IOS ou *ios vous informe que la dernière version validé de Assassin Sniper 3D pour IOS. ')
     message.channel.send('La commande *Android ou *android vous informe que la dernière version validé de Assassin Sniper 3D pour Android. ')
@@ -93,7 +73,7 @@ bot.on('message', function (message) {
 });
 
 bot.on('message', function (message) {
-  if (message.content === (prefix + 'help') ) {
+  if (message.content === (prefixA + 'help') ) {
     message.channel.send('La commande *help vous sert à connaitre les actions que Conchita peut faire. ')
     message.channel.send('La commande *ping vous sert à tester si Conchita fonctionne. ')
     message.channel.send('La commande *ios vous informe que la dernière version validé de Assassin Sniper 3D pour IOS. ')
