@@ -93,7 +93,8 @@ bot.on("message", msg => {
 
 bot.on('message', function (message) {
   if (message.content === prefixA + 'AdmissionNew') {
-    message.channel.send('**')
+    
+    message.channel.send('**\n**\n**\n**Bienvenue chez Ghost French !**\n**\nVous vous trouvez dans un salon d accueil destiné à l intégration des nouveaux venus.\nSi vous êtes un visiteur d une autre escouade venu faire connaissance, déplacez-vous dans le salon Place publique,\nqui vous est destiné, et laissez un "bonjour", ce qui nous permettra de remarquer votre présence et venir papoter avec vous.\nSi vous êtes postulant ou déjà membre de AGF ★ A Ghost French, vous êtes au bon endroit.\nPour le moment vous ne pouvez lire et écrire des messages qu ici mais dès que vous aurez signalé votre présence par un "bonjour" ou même une courte présentation,\nun officier de l escouade vous donnera le statut de rookie et vous pourrez explorer les autres salons et discuter avec tout le monde.\nLa langue parlée ici est le français mais nous avons quelques anglophones.\nS il vous plait, faites en sorte que votre PSEUDO ici corresponde à celui que vous utiliser en JEU.\nConseil : désactivez les notifications de Discord sur votre appareil si vous ne voulez pas qu elles viennent vous déranger en plein match pvp.\nAttention : tous les messages déposés dans ce salon sont destinés à être supprimés dès que l admission sera terminée.')
     message.channel.send('**')
     message.channel.send('**')
     message.channel.send('**Bienvenue chez Ghost French !**')
