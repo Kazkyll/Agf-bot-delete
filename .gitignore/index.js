@@ -54,13 +54,13 @@ bot.on('message', msg => {
 
 bot.on('message', function (message) {
   if (message.content === prefixA + 'android') {
-    message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.15')
+    message.reply('Le testeur officiel AGF vous informe que la dernière version validée de Assassin Sniper 3D pour Android est la 2.16.15')
   }
 });
 
 //bot.on('message', function (message) {
   //if (message.content === prefixJ + 'android') {
-    //message.reply('Le testeur officiel AGF vous informe que la dernière version validé de Assassin Sniper 3D pour Android est la 2.16.15')
+    //message.reply('Le testeur officiel AGF vous informe que la dernière version validée de Assassin Sniper 3D pour Android est la 2.16.15')
  // }
 //});
 
