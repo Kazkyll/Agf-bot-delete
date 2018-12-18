@@ -91,6 +91,17 @@ bot.on("message", msg => {
     }
 });
 
+bot.on("message", msg => {
+    if (msg.content.toLowerCase().startsWith(prefixA + "efface")) {
+        async function clear() {
+            msg.delete();
+            const fetched = await msg.channel.fetchMessages({limit: 99});
+            msg.channel.bulkDelete(fetched);
+        }
+        clear();
+    }
+});
+
 bot.on('message', function (message) {
   if (message.content === prefixA + 'AdmissionNew') {
     message.channel.send('\n\n\n')
