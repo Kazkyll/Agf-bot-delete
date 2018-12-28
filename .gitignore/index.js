@@ -38,7 +38,7 @@ bot.on('ready', () => {
 
 bot.on('message', function (message) {
   if (message.content === (prefixA + 'help') ) {
-    message.channel.send('La commande ???help vous sert à connaitre les actions que Conchita peut faire.\n???ping vous sert à tester si Conchita fonctionne.\n???01 vous informe que la dernière version validé de Assassin Sniper 3D pour IOS.\n???02 vous informe que la dernière version validé de Assassin Sniper 3D pour Android.\nLa commande ???101 efface 5 messages.\nLa commande ???102 efface 10 messages.\nLa commande ???03 permet de remettre le texte du salon Admission après un nettoyage à n’utiliser **que dans le salon admission svp !!!**.')
+    message.channel.send('Prefix+help vous sert à connaitre les actions que Conchita peut faire.\nPrefix+ping vous sert à tester si Conchita fonctionne.\nPrefix+01 vous informe que la dernière version validé de Assassin Sniper 3D pour IOS.\nPrefix+02 vous informe que la dernière version validé de Assassin Sniper 3D pour Android.\nPrefix+03 permet de remettre le texte du salon Admission après un nettoyage à n’utiliser **que dans le salon admission svp !!!**.\nPrefix+105 efface 5 messages.\nPrefix+110 efface 10 messages.')
 
 
   }
@@ -89,7 +89,7 @@ bot.on('message', function (message) {
 
 
 bot.on("message", msg => {
-    if (msg.content.toLowerCase().startsWith(prefixA + "101")) {
+    if (msg.content.toLowerCase().startsWith(prefixA + "105")) {
         async function clear() {
             msg.delete();
             const fetched = await msg.channel.fetchMessages({limit: 5});
@@ -100,7 +100,7 @@ bot.on("message", msg => {
 });
 
 bot.on("message", msg => {
-    if (msg.content.toLowerCase().startsWith(prefixA + "102")) {
+    if (msg.content.toLowerCase().startsWith(prefixA + "110")) {
         async function clear() {
             msg.delete();
             const fetched = await msg.channel.fetchMessages({limit: 10});
@@ -135,13 +135,13 @@ bot.on('message', function (message) {
 
 //------------------------------------------------------------------------------------------------------------
 // Test
-bot.on('message', msg => {
-  if (msg.content === prefixA + 'test') {
+//bot.on('message', msg => {
+ // if (msg.content === prefixA + 'test') {
     //var admission = bot.channels.get("509473089277657100")
-    admission.send('pong-ping-pong');
-      admission.send(webAttachmentlogoagf)
-  }
-});
+    //admission.send('pong-ping-pong');
+      //admission.send(webAttachmentlogoagf)
+  //}
+//});
 
 
 
