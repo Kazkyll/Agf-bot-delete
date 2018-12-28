@@ -3,11 +3,14 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const prefixA = "<!>";
 
+
+
+bot.on('ready', () => {  
 var admission = bot.channels.get("509473089277657100")
 var barpublic = bot.channels.get("513669474814001173")
 var barfrancophone = bot.channels.get("513664902469124098")
 var baranglophone = bot.channels.get("515530036082638859")
-
+})
 
 //----------------------------------------------------------------------------------------------------------------------
 // Ajout des variable des salons
