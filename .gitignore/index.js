@@ -27,7 +27,7 @@ const prefixA = "<!>";
     // admission.send(localFileAttachment)
 
     // Provide a URL to a file
-    const webAttachmentlogoagf = new Discord.Attachment("https://hqgwvw.am.files.1drv.com/y4mx2aRCQ4MCfRPqsuornAB2sOOkXcd6b4UgjhPfsYXcp8HRKzC9CYbUyx2pnUytAfSiNCpx2O22VbyMrDwdig87LOGfNTINscwrez9Y01rxLfh_flUYGG-Xc964a5leEvuKHVwseRB03I5F0dYzhPb2mhJMZRVnooGoRs-sJppfytFU2garc3A8ed807C6H30EPnVto_FCerbDQQTZqlVSFw")
+    const webAttachmentlogoagf = new Discord.Attachment(https://hqgwvw.am.files.1drv.com/y4mx2aRCQ4MCfRPqsuornAB2sOOkXcd6b4UgjhPfsYXcp8HRKzC9CYbUyx2pnUytAfSiNCpx2O22VbyMrDwdig87LOGfNTINscwrez9Y01rxLfh_flUYGG-Xc964a5leEvuKHVwseRB03I5F0dYzhPb2mhJMZRVnooGoRs-sJppfytFU2garc3A8ed807C6H30EPnVto_FCerbDQQTZqlVSFw)
     //generalChannel.send(webAttachment)
 //})
 
