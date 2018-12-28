@@ -6,16 +6,16 @@ const prefixA = "<!>";
 //----------------------------------------------------------------------------------------------------------------------
 // Ajout des variable des salons
 
-bot.on('ready', () => {  
+//bot.on('ready', () => {  
   
     //var barfrancophone = client.channels.get("513664902469124098") // Replace with known channel ID
     // barfrancophone.send("Bienvenu au bar des AGF")
     //var baranglophone = client.channels.get("515530036082638859") // Replace with known channel ID
     //var barpublic = client.channels.get("513669474814001173") // Replace with known channel ID
     // barpublic.send("Bienvenu au bar Public des AGF")
-    var admission = bot.channels.get("509473089277657100") // Replace with known channel ID
+    //var admission = bot.channels.get("509473089277657100") // Replace with known channel ID
       
-})
+//})
 
 //-----------------------------------------------------------------------------------------------------------------------
 // Ajout piece joint ou image a un salon
@@ -136,11 +136,11 @@ bot.on('message', function (message) {
   }
 });
 
-bot.on('message', msg => {
-  if (msg.content === prefixA + 'test') {
-    admission.send('pong-ping-pong');
-  }
-});
+//bot.on('message', msg => {
+  //if (msg.content === prefixA + 'test') {
+    //admission.send('pong-ping-pong');
+  //}
+//});
 
 
 
