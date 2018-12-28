@@ -15,7 +15,7 @@ bot.on('ready', () => {
     // barpublic.send("Bienvenu au bar Public des AGF")
     var admission = bot.channels.get("509473089277657100") // Replace with known channel ID
       
-//})
+})
 
 //-----------------------------------------------------------------------------------------------------------------------
 // Ajout piece joint ou image a un salon
@@ -139,7 +139,7 @@ bot.on('message', function (message) {
 bot.on('message', msg => {
   if (msg.content === prefixA + 'test') {
     admission.send('pong-ping-pong');
-      admission.send(webAttachmentlogoagf);
+      admission.send(webAttachmentlogoagf)
   }
 });
 
