@@ -38,7 +38,7 @@ bot.on('ready', () => {
 
 bot.on('message', function (message) {
   if (message.content === (prefixA + 'help') ) {
-    message.channel.send('Prefix+help vous sert à connaitre les actions que Conchita peut faire.\nPrefix+ping vous sert à tester si Conchita fonctionne.\nPrefix+01 vous informe que la dernière version validé de Assassin Sniper 3D pour IOS.\nPrefix+02 vous informe que la dernière version validé de Assassin Sniper 3D pour Android.\nPrefix+03 permet de remettre le texte du salon Admission après un nettoyage à n’utiliser **que dans le salon admission svp !!!**.\nPrefix+105 efface 5 messages.\nPrefix+110 efface 10 messages.')
+    message.channel.send('Prefix+**help** vous sert à connaitre les actions que Conchita peut faire.\nPrefix+**ping** vous sert à tester si Conchita fonctionne.\nPrefix+**01** vous informe que la dernière version validé de Assassin Sniper 3D pour IOS.\nPrefix+**02** vous informe que la dernière version validé de Assassin Sniper 3D pour Android.\nPrefix+**03** permet de remettre le texte du salon Admission après un nettoyage à n’utiliser **que dans le salon admission svp !!!**.\nPrefix+**105** efface 5 messages.\nPrefix+**110** efface 10 messages.')
 
 
   }
