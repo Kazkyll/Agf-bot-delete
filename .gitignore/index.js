@@ -4,49 +4,36 @@ const bot = new Discord.Client();
 const prefixA = "<!>";
 
 
-
-bot.on('ready', () => {  
-var admission = bot.channels.get("509473089277657100")
-var barpublic = bot.channels.get("513669474814001173")
-var barfrancophone = bot.channels.get("513664902469124098")
-var baranglophone = bot.channels.get("515530036082638859")
-})
-
 //----------------------------------------------------------------------------------------------------------------------
 // Ajout des variable des salons
 
-//bot.on('ready', () => {  
-  
-    //var barfrancophone = client.channels.get("513664902469124098") // Replace with known channel ID
-    // barfrancophone.send("Bienvenu au bar des AGF")
-    //var baranglophone = client.channels.get("515530036082638859") // Replace with known channel ID
-    //var barpublic = client.channels.get("513669474814001173") // Replace with known channel ID
-    // barpublic.send("Bienvenu au bar Public des AGF")
-    //var admission = bot.channels.get("509473089277657100") // Replace with known channel ID
-      
-//})
+//var admission = bot.channels.get("509473089277657100")
+//var barpublic = bot.channels.get("513669474814001173")
+//var barfrancophone = bot.channels.get("513664902469124098")
+//var baranglophone = bot.channels.get("515530036082638859")
+
+//---------------------------------------------------------------------------------------------------------------------
+
+
 
 //-----------------------------------------------------------------------------------------------------------------------
 // Ajout piece joint ou image a un salon
 
-//bot.on('ready', () => {
-      
-    // Provide a path to a local file
     // const localFileAttachment = new Discord.Attachment('D:\\logo.png')
     // admission.send(localFileAttachment)
 
     // Provide a URL to a file
     const webAttachmentlogoagf = new Discord.Attachment('https://hqgwvw.am.files.1drv.com/y4mx2aRCQ4MCfRPqsuornAB2sOOkXcd6b4UgjhPfsYXcp8HRKzC9CYbUyx2pnUytAfSiNCpx2O22VbyMrDwdig87LOGfNTINscwrez9Y01rxLfh_flUYGG-Xc964a5leEvuKHVwseRB03I5F0dYzhPb2mhJMZRVnooGoRs-sJppfytFU2garc3A8ed807C6H30EPnVto_FCerbDQQTZqlVSFw')
     //generalChannel.send(webAttachment)
-//})
 
-
-
+//-----------------------------------------------------------------------------------------------------------------------
+// Affichage du bot
 
 bot.on('ready', () => {
   console.log(`Logged in as ${bot.user.tag}!`);
 });
 
+//-------------------------------------------------------------------------------------------------------------------------
 // parametrage de la commande help pour administrateurs
 
 bot.on('message', function (message) {
@@ -72,7 +59,7 @@ bot.on('message', function (message) {
 //});
 
 
-
+//------------------------------------------------------------------------------------------------------------------------
 //  parametre de test de Conchita
 
 
@@ -82,7 +69,7 @@ bot.on('message', msg => {
   }
 });
 
-
+//----------------------------------------------------------------------------------------------------------------------
 //  parametre des version validé des OS du jeu
 
 bot.on('message', function (message) {
@@ -97,6 +84,7 @@ bot.on('message', function (message) {
   }
 });
 
+//---------------------------------------------------------------------------------------------------------------------------
 //Script de suppression des messages
 
 
@@ -132,20 +120,21 @@ bot.on("message", msg => {
         clear();
     }
 });
+
+
 //------------------------------------------------------------------------------------------------------
+// Message de l'admission
 bot.on('message', function (message) {
   if (message.content === prefixA + '03') {
-    //var admission = bot.channels.get("509473089277657100")
-    //admission.send(webAttachmentlogoagf)
+    var admission = bot.channels.get("509473089277657100")
     admission.send('\n\n\n')
     admission.send('\n\n\n-**Bienvenue chez Ghost French !**-\n\n\nVous vous trouvez dans un salon d’accueil destiné à l’intégration des nouveaux venus.\nSi vous êtes un visiteur d’une autre escouade venu faire connaissance, déplacez-vous dans le salon Place publique,\nqui vous est destiné, et laissez un "bonjour", ce qui nous permettra de remarquer votre présence et venir papoter avec vous.\nSi vous êtes postulant ou déjà membre de AGF ★ A Ghost French, vous êtes au bon endroit.\nPour le moment vous ne pouvez lire et écrire des messages qu’ici, mais dès que vous aurez signalé votre présence par un "bonjour" ou même une courte présentation, un officier de l’escouade vous donnera le statut de Rookie et vous pourrez explorer les autres salons et discuter avec tout le monde.\nLa langue parlée ici est le français mais nous avons quelques anglophones.\nS’il vous plait, faites en sorte que votre PSEUDO ici corresponde à celui que vous utilisez sur le JEU.\nConseil : désactivez les notifications de Discord sur votre appareil si vous ne voulez pas qu’elles viennent vous déranger en plein match PVP.\nAttention : tous les messages déposés dans ce salon sont destinés à être supprimés dès que l’admission sera terminée.\n\n\n----------------------------------------------\nAGF**AGF**AGF**AGF**AGF**AGF**AGF**AGF**AGF\n----------------------------------------------\n\n\n-**Welcome to Ghost French!**-\n\n\nYou are in a reception lounge for the integration of newcomers.\nIf you are a visitor from another squad, move to the Place publique chatroom, which is dedicated to you, and leave a "hello",\nwhich will allow us to notice your presence and come for a chat with you.\nIf you are an applicant or already member of AGF ★ A Ghost French,you are in the right place..\nAt the moment you can read and write messages only here but as soon as you have reported your presence by a "hello" or even a short presentation if you are a candidate,')
     admission.send('a squad officer will give you the status of member and you can explore other channels and chat with everyone..\nThe language spoken here is French but we have some English speakers. Please make sure your username here matches the one you use in game..\nTip: Turn off Discord notifications on your device if you do not want them to bother you in the middle of a pvp match.\nWarning: all messages posted in this channel are intended to be deleted as soon as admission is complete.\n\n\n')
-    //message.channel.send('\n\n\n')
-    //message.channel.send('\n\n\n-**Bienvenue chez Ghost French !**-\n\n\nVous vous trouvez dans un salon d’accueil destiné à l’intégration des nouveaux venus.\nSi vous êtes un visiteur d’une autre escouade venu faire connaissance, déplacez-vous dans le salon Place publique,\nqui vous est destiné, et laissez un "bonjour", ce qui nous permettra de remarquer votre présence et venir papoter avec vous.\nSi vous êtes postulant ou déjà membre de AGF ★ A Ghost French, vous êtes au bon endroit.\nPour le moment vous ne pouvez lire et écrire des messages qu’ici, mais dès que vous aurez signalé votre présence par un "bonjour" ou même une courte présentation, un officier de l’escouade vous donnera le statut de Rookie et vous pourrez explorer les autres salons et discuter avec tout le monde.\nLa langue parlée ici est le français mais nous avons quelques anglophones.\nS’il vous plait, faites en sorte que votre PSEUDO ici corresponde à celui que vous utilisez sur le JEU.\nConseil : désactivez les notifications de Discord sur votre appareil si vous ne voulez pas qu’elles viennent vous déranger en plein match PVP.\nAttention : tous les messages déposés dans ce salon sont destinés à être supprimés dès que l’admission sera terminée.\n\n\n----------------------------------------------\nAGF**AGF**AGF**AGF**AGF**AGF**AGF**AGF**AGF\n----------------------------------------------\n\n\n-**Welcome to Ghost French!**-\n\n\nYou are in a reception lounge for the integration of newcomers.\nIf you are a visitor from another squad, move to the Place publique chatroom, which is dedicated to you, and leave a "hello",\nwhich will allow us to notice your presence and come for a chat with you.\nIf you are an applicant or already member of AGF ★ A Ghost French,you are in the right place..\nAt the moment you can read and write messages only here but as soon as you have reported your presence by a "hello" or even a short presentation if you are a candidate,')
-    //message.channel.send('a squad officer will give you the status of member and you can explore other channels and chat with everyone..\nThe language spoken here is French but we have some English speakers. Please make sure your username here matches the one you use in game..\nTip: Turn off Discord notifications on your device if you do not want them to bother you in the middle of a pvp match.\nWarning: all messages posted in this channel are intended to be deleted as soon as admission is complete.\n\n\n')
-  }
+     }
 });
 
+//------------------------------------------------------------------------------------------------------------
+// Test
 bot.on('message', msg => {
   if (msg.content === prefixA + 'test') {
     //var admission = bot.channels.get("509473089277657100")
@@ -159,5 +148,7 @@ bot.on('message', msg => {
 
 
 
+//-------------------------------
+//Demarrage du bot
 
 bot.login(process.env.TOKEN);
