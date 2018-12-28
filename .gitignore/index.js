@@ -6,30 +6,30 @@ const prefixA = "???";
 //----------------------------------------------------------------------------------------------------------------------
 // Ajout des variable des salons
 
-bot.on('ready', () => {  
+//bot.on('ready', () => {  
   
-    var barfrancophone = client.channels.get("513664902469124098") // Replace with known channel ID
+    //var barfrancophone = client.channels.get("513664902469124098") // Replace with known channel ID
     // barfrancophone.send("Bienvenu au bar des AGF")
-    var baranglophone = client.channels.get("515530036082638859") // Replace with known channel ID
-    var barpublic = client.channels.get("513669474814001173") // Replace with known channel ID
+    //var baranglophone = client.channels.get("515530036082638859") // Replace with known channel ID
+    //var barpublic = client.channels.get("513669474814001173") // Replace with known channel ID
     // barpublic.send("Bienvenu au bar Public des AGF")
-    var admission = client.channels.get("509473089277657100") // Replace with known channel ID
+    //var admission = client.channels.get("509473089277657100") // Replace with known channel ID
       
-})
+//})
 
 //-----------------------------------------------------------------------------------------------------------------------
 // Ajout piece joint ou image a un salon
 
-bot.on('ready', () => {
+//bot.on('ready', () => {
       
     // Provide a path to a local file
     // const localFileAttachment = new Discord.Attachment('D:\\logo.png')
     // admission.send(localFileAttachment)
 
     // Provide a URL to a file
-    const webAttachmentlogoagf = new Discord.Attachment('https://drive.google.com/file/d/17BZjvLnftvnjdyWfB6z0RzqnsfxasrOq/view?usp=sharing')
+    //const webAttachmentlogoagf = new Discord.Attachment('https://drive.google.com/file/d/17BZjvLnftvnjdyWfB6z0RzqnsfxasrOq/view?usp=sharing')
     //generalChannel.send(webAttachment)
-})
+//})
 
 
 
