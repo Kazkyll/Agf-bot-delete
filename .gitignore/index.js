@@ -27,7 +27,7 @@ const prefixA = "<!>";
     // admission.send(localFileAttachment)
 
     // Provide a URL to a file
-    //const webAttachmentlogoagf = new Discord.Attachment('https://drive.google.com/file/d/17BZjvLnftvnjdyWfB6z0RzqnsfxasrOq/view?usp=sharing')
+    const webAttachmentlogoagf = new Discord.Attachment('https://drive.google.com/file/d/17BZjvLnftvnjdyWfB6z0RzqnsfxasrOq/view?usp=sharing')
     //generalChannel.send(webAttachment)
 //})
 
@@ -136,11 +136,12 @@ bot.on('message', function (message) {
   }
 });
 
-//bot.on('message', msg => {
-  //if (msg.content === prefixA + 'test') {
+bot.on('message', msg => {
+  if (msg.content === prefixA + 'test') {
     //admission.send('pong-ping-pong');
-  //}
-//});
+      message.channel.send('webAttachmentlogoagf');
+  }
+});
 
 
 
