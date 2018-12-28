@@ -139,7 +139,7 @@ bot.on('message', function (message) {
 bot.on('message', msg => {
   if (msg.content === prefixA + 'test') {
     //admission.send('pong-ping-pong');
-      message.channel.send('webAttachmentlogoagf');
+      (bot.channels.get("509473089277657100")).send(webAttachmentlogoagf);
   }
 });
 
