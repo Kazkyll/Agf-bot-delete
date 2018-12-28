@@ -13,7 +13,7 @@ bot.on('ready', () => {
     //var baranglophone = client.channels.get("515530036082638859") // Replace with known channel ID
     //var barpublic = client.channels.get("513669474814001173") // Replace with known channel ID
     // barpublic.send("Bienvenu au bar Public des AGF")
-    var admission = client.channels.get("509473089277657100") // Replace with known channel ID
+    var admission = bot.channels.get("509473089277657100") // Replace with known channel ID
       
 })
 
