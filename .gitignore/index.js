@@ -6,7 +6,7 @@ const prefixA = "???";
 //----------------------------------------------------------------------------------------------------------------------
 // Ajout des variable des salons
 
-client.on('ready', () => {  
+bot.on('ready', () => {  
   
     var barfrancophone = client.channels.get("513664902469124098") // Replace with known channel ID
     // barfrancophone.send("Bienvenu au bar des AGF")
@@ -20,7 +20,7 @@ client.on('ready', () => {
 //-----------------------------------------------------------------------------------------------------------------------
 // Ajout piece joint ou image a un salon
 
-client.on('ready', () => {
+bot.on('ready', () => {
       
     // Provide a path to a local file
     // const localFileAttachment = new Discord.Attachment('D:\\logo.png')
