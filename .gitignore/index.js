@@ -42,7 +42,7 @@ bot.on('ready', () => {
 
 bot.on('message', function (message) {
   if (message.content === (prefixA + 'help') ) {
-    message.channel.send('Prefix+**help** vous sert à connaitre les actions que Conchita peut faire.\nPrefix+**ping** vous sert à tester si Conchita fonctionne.\nPrefix+**01** vous informe que la dernière version validée de Assassin Sniper 3D pour IOS.\nPrefix+**02** vous informe que la dernière version validée de Assassin Sniper 3D pour Android.\nPrefix+**03** vous informe des versions non validées de Assassin Sniper 3D pour Android.\nPrefix+**04** permet de remettre le texte du salon Admission après un nettoyage.\nPrefix+**05** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (FR).\nPrefix+**06** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (EN).\nPrefix+**105** efface 5 messages.\nPrefix+**110** efface 10 messages.')
+    message.channel.send('Prefix+**help** Vous sert à connaitre les actions que Conchita peut faire.\nPrefix+**ping** Vous sert à tester si Conchita fonctionne.\nPrefix+**01** Vous informe que la dernière version validée de Assassin Sniper 3D pour IOS.\nPrefix+**02** Vous informe que la dernière version validée de Assassin Sniper 3D pour Android.\nPrefix+**03** Vous informe des versions non validées de Assassin Sniper 3D pour Android.\nPrefix+**04** Permet de remettre le texte du salon Admission après un nettoyage.\nPrefix+**05** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (FR).\nPrefix+**06** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (EN).\nPrefix+**07** Message Privé envoyé au Rookie récemment promu au rôle de Membre (FR)\nPrefix+**105** efface 5 messages.\nPrefix+**110** efface 10 messages.')
 
   }
 });
@@ -179,7 +179,15 @@ bot.on('message', function (message) {
      }
 });
 
+//Message Privé envoyé au Rookie récemment promu au rôle de Membre (FR)
 
+bot.on('message', function (message) {
+  if (message.content === prefixA + '07') {
+    var admission = bot.channels.get("509473089277657100")
+    
+    admission.send('Tu viens d’être promu au rang de Membre. Félicitations !\nTu as désormais accès à de nouveaux salons :\n\n**-    Trombinoscope :** tu y trouveras les photos des membres de l’escouade. Tu es bien sûr invité(e) à y poster la tienne si tu le souhaites.\n**-    Vote des membres :** c’est ici que sont soumis les votes aux membres de l’équipe.\n**-    Conseils OP :**  tu y trouveras des conseils, astuces et pleins de choses pour progresser en l’OP.\n**-    Conseils PVP :** tu y trouveras des conseils, astuces et pleins de choses pour progresser en PVP.\n**-    Mémoriser la map :** tu y trouveras des screenshots de la map PVP montrant la plupart des emplacements.\n**-    iOS :** c’est ici que sont postées les astuces du jeu sous iOS.\n**-    Android :** c’est ici que sont postées les astuces du jeu sous Android.\n**-    Divers :** tu y trouveras une aide afin d’utiliser au mieux les fonctionnalités de Discord et du jeu.\n**-    Livre des records :** on y poste les screenshots de nos exploits et records.\n**-    Cinéma des AGF :** les vidéos qu’il nous arrive de partager.\n**-    Cuisine des AGF :** Les recettes de cuisine des snipers, eh oui.\n**-    Les bizarreries :** on y poste des screenshots de trucs bizarres.\n\n\nProchaine étape : Officier ! Si tu es sage.  :wink:')
+     }
+});
 
 
 
