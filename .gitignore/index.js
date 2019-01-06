@@ -198,6 +198,22 @@ bot.on('message', function (message) {
      }
 });
 
+//Message Privé envoyé au Rookie récemment promu au rôle de Membre (EN)
+
+bot.on('message', function (message) {
+  if (message.content === prefixA + '08') {
+    var admission = bot.channels.get("509473089277657100")
+    
+    admission.send('You have just been promoted to the rank of Member. Congratulations!\nYou now have access to new chatrooms:\n\n**-    Trombinoscope :** this is where members post their pictures. Of course, you are invited to post your pic, but this is not an obligation.\n**-    Vote des membres :** this is where votes are submitted to AGF members.\n**-    Conseils OP :**  Advices, tips, lots of useful things to progress in OP.\n**-    Conseils PVP :** Advices, tips, lots of useful things to progress in OP.\n**-    Mémoriser la map :** you will find screenshots of the PVP map to show you most of the snipers locations.\n**-    iOS :** this is where advices are published about the game on iOS.\n**-    Android :** this is where advices are published about the game on Android.\n**-    Divers :** you will find tips on using Discord and Sniper3D commands.\n**-    Livre des records :** members post her screenshots of theirs exploits and record.\n**-    Cinéma des AGF :** The videos that we happen to share.\n**-    Cuisine des AGF :** The cooking recipes of the snipers, yes.\n**-    Les bizarreries :** members post her screenshots of strange situations.\n\n\nNext step: Officer! If you are good.  :wink:')
+     }
+});
+
+
+
+
+
+
+
 
 
 
