@@ -136,7 +136,7 @@ bot.on("message", msg => {
     if (msg.content.toLowerCase().startsWith(prefixA + "efface")) {
         async function clear() {
             msg.delete();
-            const fetched = await msg.channel.fetchMessages({limit: 99});
+            const fetched = await msg.channel.fetchMessages({limit: 99}); 
             msg.channel.bulkDelete(fetched);
         }
         clear();
