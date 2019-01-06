@@ -42,7 +42,7 @@ bot.on('ready', () => {
 
 bot.on('message', function (message) {
   if (message.content === (prefixA + 'help') ) {
-    message.channel.send('Prefix+**help** vous sert à connaitre les actions que Conchita peut faire.\nPrefix+**ping** vous sert à tester si Conchita fonctionne.\nPrefix+**01** vous informe que la dernière version validée de Assassin Sniper 3D pour IOS.\nPrefix+**02** vous informe que la dernière version validée de Assassin Sniper 3D pour Android.\nPrefix+**03** vous informe des versions non validées de Assassin Sniper 3D pour Android.\nPrefix+**04** permet de remettre le texte du salon Admission après un nettoyage.\nPrefix+**05** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie.\nPrefix+**105** efface 5 messages.\nPrefix+**110** efface 10 messages.')
+    message.channel.send('Prefix+**help** vous sert à connaitre les actions que Conchita peut faire.\nPrefix+**ping** vous sert à tester si Conchita fonctionne.\nPrefix+**01** vous informe que la dernière version validée de Assassin Sniper 3D pour IOS.\nPrefix+**02** vous informe que la dernière version validée de Assassin Sniper 3D pour Android.\nPrefix+**03** vous informe des versions non validées de Assassin Sniper 3D pour Android.\nPrefix+**04** permet de remettre le texte du salon Admission après un nettoyage.\nPrefix+**05** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (FR).\nPrefix+**06** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (EN).\nPrefix+**105** efface 5 messages.\nPrefix+**110** efface 10 messages.')
 
   }
 });
@@ -159,7 +159,7 @@ bot.on('message', function (message) {
 //-----------------------------------------------------------------------------------------------------------------
 // Messages utiles
 
-//Message d’accueil d’un nouvel arrivant, promu au rôle de rookie
+//Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (FR)
 
 bot.on('message', function (message) {
   if (message.content === prefixA + '05') {
@@ -168,6 +168,20 @@ bot.on('message', function (message) {
     admission.send('Notre serveur de chat Discord comporte plusieurs salons. Tu apprendras très vite à les identifier.\n\n**-    Admissions :** c’est là que tu te trouves. Ce salon ne sert qu’aux admissions, on ne va pas y rester. Ce salon disparaitra une fois que tu en seras sorti.\n**-    Bar public :** c’est là qu’on bavarde avec les joueurs en visite des autres escouades.\n\nLes autres salons sont réservés aux membres, comme toi :\n\n**-    Messages importants :** c’est là que sont regroupés tous les messages importants publiés sur les différents salons du serveur afin que tu puisses les retrouver et les consulter rapidement \n     et régulièrement\n**-    Règlement intérieur :** on y trouve les règles de l’escouade.\n**-    Bar francophone :** c’est là qu’on papote, beaucoup, sans doute trop.\n**-    Irish Pub :** la même chose mais pour les anglophones\n**-    Division 1, 2 ou 3 :** tu n’auras qu’un de ces salons, celui qui correspond à la division dans laquelle tu auras été affectée.\n     C’est ici que les capitaines donnent les informations importantes (objectifs, OP, etc.)\n**-    Division PVP :** Ce salon te sera ouvert si tu intègres la division PVP et que tu participes donc à la battle en cours. Une fois la battle terminée, le salon sera de nouveau fermé jusqu’au prochain PVP\n**-    Mises à jour iOS :** tu y trouveras la dernière mise à jour iOS validée par l’équipe. Nous te conseillons vivement de ne pas télécharger de version non validée afin de t’éviter tout problème dans le jeu\n**-    Mises à jour Android :** tu y trouveras la dernière mise à jour Android validée par l’équipe.\n     Nous te conseillons vivement de ne pas télécharger de version non validée afin de t’éviter tout problème dans le jeu\n**-    Forum mises à jour :** un endroit où tu peux poser des questions sur les différentes versions du jeu et les mises à jour\n**-    Conseils villes :** tu y trouveras des conseils pour finir tes villes rapidement.\n\n\nCommence par lire le règlement et on se retrouve au Bar francophone.')
      }
 });
+
+//Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (EN)
+
+bot.on('message', function (message) {
+  if (message.content === prefixA + '06') {
+    var admission = bot.channels.get("509473089277657100")
+    
+    admission.send('Our Discord Chat Server has multiple rooms. You will learn very quickly to identify them.\n\n**-    Admissions :** that’s where we are now. This room is only for admissions, we will not stay there. This room will disappear once you will leave it.\n**-    Bar public :** this is where we chat with visiting people of other squads.\n\nThe others rooms are reserved for members, like you:\n\n**-    Messages importants :**This is where you will find important messages published on the different rooms of our server. The goal of this room is for you to find and read quickly these messages.\n**-    Règlement intérieur :** it contains the rules of the squad, both in French and English.\n**-    Bar francophone :** this is where we chat, much, probably too much, but in french.\n**-    Irish Pub :** the same thing but for Anglophones.\n**-    Division 1, 2 ou 3 :** you will have access to one of this room, which correspond to the division you have been affected. It’s here you will find important information given by your captain (objectives, OP, etc.)\n**-    Division PVP :** This room will be open if you are invited in joining the PVP division for a battle. Once the battle is over, the room will be closed again, until the next battle.\n**-    Mises à jour iOS :** you will find the last iOS update validated by the team.\n**-    Mises à jour Android :** you will find the last Android update validated by the team. We strongly recommend you to never upgrade your app if the version has not been validated by the team in the way to avoid you problems with the game.\n     We strongly recommend you to never upgrade your app if the version has not been validated by the team in the way to avoid you problems with the game.\n**-    Forum mises à jour :** a place where you can ask questions about the app and her updates.\n**-    Conseils villes :** Advices, tips, lots of useful things to progress and finish your cities.\n\n\nStart by reading the rules and we meet at the Irish Pub.')
+     }
+});
+
+
+
+
 
 
 
