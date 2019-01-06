@@ -41,8 +41,17 @@ bot.on('ready', () => {
 // parametrage de la commande help pour administrateurs
 
 bot.on('message', function (message) {
+  if (message.content === (prefixA + 'mod') ) {
+    message.channel.send('Prefix+**help** Vous sert à connaitre les actions que Conchita peut faire.\nPrefix+**ping** Vous sert à tester si Conchita fonctionne.\nPrefix+**01** Vous informe que la dernière version validée de Assassin Sniper 3D pour IOS.\nPrefix+**02** Vous informe que la dernière version validée de Assassin Sniper 3D pour Android.\nPrefix+**03** Vous informe des versions non validées de Assassin Sniper 3D pour Android.\nPrefix+**04** Permet de remettre le texte du salon Admission après un nettoyage.\nPrefix+**05** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (FR).\nPrefix+**06** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (EN).\nPrefix+**07** Message Privé envoyé au Rookie récemment promu au rôle de Membre (FR)\nPrefix+**08** Message Privé envoyé au Rookie récemment promu au rôle de Membre (EN)\nPrefix+**AAA** Message Privé envoyé au Membre récemment promu au rôle d’Officier (FR)\nPrefix+**AAB** Message Privé envoyé au Membre récemment promu au rôle d’Officier (EN)\nPrefix+**EF5** efface 5 messages.\nPrefix+**EF10** efface 10 messages.')
+
+  }
+});
+
+// parametrage de la commande help pour administrateurs
+
+bot.on('message', function (message) {
   if (message.content === (prefixA + 'help') ) {
-    message.channel.send('Prefix+**help** Vous sert à connaitre les actions que Conchita peut faire.\nPrefix+**ping** Vous sert à tester si Conchita fonctionne.\nPrefix+**01** Vous informe que la dernière version validée de Assassin Sniper 3D pour IOS.\nPrefix+**02** Vous informe que la dernière version validée de Assassin Sniper 3D pour Android.\nPrefix+**03** Vous informe des versions non validées de Assassin Sniper 3D pour Android.\nPrefix+**04** Permet de remettre le texte du salon Admission après un nettoyage.\nPrefix+**05** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (FR).\nPrefix+**06** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (EN).\nPrefix+**07** Message Privé envoyé au Rookie récemment promu au rôle de Membre (FR)\nPrefix+**105** efface 5 messages.\nPrefix+**110** efface 10 messages.')
+    message.channel.send('Prefix+**help** Vous sert à connaitre les actions que Conchita peut faire.\nPrefix+**ping** Vous sert à tester si Conchita fonctionne.\nPrefix+**01** Vous informe que la dernière version validée de Assassin Sniper 3D pour IOS.\nPrefix+**02** Vous informe que la dernière version validée de Assassin Sniper 3D pour Android.\nPrefix+**03** Vous informe des versions non validées de Assassin Sniper 3D pour Android.\nPrefix+**04** Permet de remettre le texte du salon Admission après un nettoyage.\nPrefix+**05** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (FR).\nPrefix+**06** Message d’accueil d’un nouvel arrivant, promu au rôle de rookie (EN).\nPrefix+**07** Message Privé envoyé au Rookie récemment promu au rôle de Membre (FR)\nPrefix+**08** Message Privé envoyé au Rookie récemment promu au rôle de Membre (EN)')
 
   }
 });
@@ -102,7 +111,7 @@ bot.on('message', function (message) {
 
 
 bot.on("message", msg => {
-    if (msg.content.toLowerCase().startsWith(prefixA + "105")) {
+    if (msg.content.toLowerCase().startsWith(prefixA + "EF5")) {
         async function clear() {
             msg.delete();
             const fetched = await msg.channel.fetchMessages({limit: 5});
@@ -113,7 +122,7 @@ bot.on("message", msg => {
 });
 
 bot.on("message", msg => {
-    if (msg.content.toLowerCase().startsWith(prefixA + "110")) {
+    if (msg.content.toLowerCase().startsWith(prefixA + "EF10")) {
         async function clear() {
             msg.delete();
             const fetched = await msg.channel.fetchMessages({limit: 10});
