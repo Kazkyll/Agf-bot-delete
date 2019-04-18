@@ -133,7 +133,7 @@ bot.on("message", msg => {
 });
 
 bot.on("message", msg => {
-    if (msg.content.toLowerCase().startsWith(prefixA + "efface")) {
+    if (msg.content.toLowerCase().startsWith(prefixA + "effaceTout")) {
         async function clear() {
             msg.delete();
             const fetched = await msg.channel.fetchMessages({limit: 99}); 
