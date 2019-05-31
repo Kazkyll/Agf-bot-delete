@@ -143,6 +143,6 @@ bot.on('message', function (message) {
 
 
 
-
+emitter.setMaxListeners()
 
 bot.login(process.env.TOKEN);
